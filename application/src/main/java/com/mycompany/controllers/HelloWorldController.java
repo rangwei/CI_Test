@@ -19,7 +19,7 @@ public class HelloWorldController
     private static final Logger logger = CloudLoggerFactory.getLogger(HelloWorldController.class);
 
     @RequestMapping( method = RequestMethod.GET )
-    public ResponseEntity<HelloWorldResponse> getHello( @RequestParam( defaultValue = "world" ) final String name )
+    public ResponseEntity<HelloWorldResponse> getHello( @RequestParam( defaultValue = "SAP!" ) final String name )
     {
         logger.info("I am running!");
         return ResponseEntity.ok(new HelloWorldResponse(name));
