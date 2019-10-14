@@ -21,7 +21,7 @@ public class HelloWorldController
     @RequestMapping( method = RequestMethod.GET )
     public ResponseEntity<HelloWorldResponse> getHello( @RequestParam( defaultValue = "SAP!" ) final String name )
     {
-        logger.info("I am running!");
+        logger.info("I am running! 123");
         return ResponseEntity.ok(new HelloWorldResponse(name));
     }
 }
